@@ -34,7 +34,7 @@ class DoctorController extends Controller
           }
     }
 
-    function check(Request $request){
+    function doc_check(Request $request){
         //Validate Inputs
         $request->validate([
            'email'=>'required|email|exists:doctors,email',
